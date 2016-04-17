@@ -2,12 +2,12 @@ var React = require('react'),
     ReactRouter = require('react-router'),
     Router = ReactRouter.Router,
     Route = ReactRouter.Route,
-    hashHistory = ReactRouter.hashHistory;
+    browserHistory = ReactRouter.browserHistory;
 
 var Main = require('../components/Main');
 
 var routes = (
-    <Router history={hashHistory}>
+    <Router history={browserHistory}>
         <Route path='/' component={Main}></Route>
     </Router>
 );
